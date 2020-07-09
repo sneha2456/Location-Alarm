@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewRemainder">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="35sp"
+            android:text="Title"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:paddingRight="16dp"
+            android:id="@+id/switchViewRemainder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_toLeftOf="@+id/textViewDist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/textViewDist"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="100M"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapViewRemainder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutdesc"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        >
+
+    </com.google.android.gms.maps.MapView>
+
+</RelativeLayout>

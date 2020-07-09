@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".enter_details"
+    android:background="#EEF">
+
+    <include layout="@layout/toolbar"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/enterdetailstext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="88dp"-->
+<!--        android:layout_marginBottom="582dp"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="34sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+
+    <EditText
+        android:id="@+id/griddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="528dp"
+        android:hint="meet"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/extratips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="413dp"
+        android:hint="Extra tips"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/addDetails"
+        android:layout_width="114dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginTop="627dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="29dp"
+        android:background="#EEF"
+        android:onClick="geolocation"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus" />
+
+
+</RelativeLayout>

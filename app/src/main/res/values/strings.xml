@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocationAlarm</string>
+    <string name="title_activity_mapactivity">mapactivity</string>
+    <string name="menu_search">search</string>
+</resources>
